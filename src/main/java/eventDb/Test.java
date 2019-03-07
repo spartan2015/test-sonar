@@ -19,6 +19,8 @@ public class Test {
             resultSet = preparedStatement.executeQuery();
             resultSet.next();
 
+            PreparedStatement stmt = null;
+
             resultSet.close();
         }catch(Exception ex){
             ex.printStackTrace();
