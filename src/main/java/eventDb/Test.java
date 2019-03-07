@@ -9,6 +9,13 @@ import java.sql.SQLException;
 
 public class Test {
 
+    public static final String classVersion = "";
+    public String a = "SEL";
+    public String b = "SEL";
+    public String c = "SEL";
+
+    private static String t = "";
+
     public static void main(String... args) throws SQLException {
 
         Connection connection = null;
@@ -22,12 +29,16 @@ public class Test {
             PreparedStatement stmt = null;
 
             resultSet.close();
-        }catch(Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
-        }finally {
+        } finally {
             //closeStatement(resultSet);
         }
 
+    }
+
+    public void update(){
+        t = "a";
     }
 
     private static void closeStatement(ResultSet resultSet) throws SQLException {
