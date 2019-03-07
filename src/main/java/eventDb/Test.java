@@ -35,6 +35,28 @@ public class Test {
             //closeStatement(resultSet);
         }
 
+
+        {
+            for(;;) {
+                if (true)
+                System.out.print("a");
+            }
+        }
+
+
+        {
+            for(;;) {
+                if (true)
+                    System.out.print("a");
+            }
+        }
+
+        {
+            for(;;) {
+                if (true)
+                    System.out.print("a");
+            }
+        }
     }
 
     public void update(){
